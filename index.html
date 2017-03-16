@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Salary Generator</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src = "./js/calculator.js"></script>
+	<!-- <script type="text/javascript" src="./js/generate.js"></script> -->
+	
+</head>
+<body>
+	<h1>SALARY GENERATOR<h1>
+	<H5></H5>
+		<form id="SalaryForm" method="post">
+			<fieldset>
+			<p>
+				<label>Employee Level</label>
+				<select name="employeeType" id = "employeeType">
+	               <option value = "interns" selected>Interns</option>
+	               <option value = "associates">Associates</option>
+	               <option value = "managers">Managers</option>
+	               <option value = "excutives">Excutives</option>
+	               <option value = "directors">Directors</option>
+             	</select>
+			</p>
+			<p>
+				<label >Experience Level</label>
+				<input type="radio" name="experienceExp" value="level3">level 3
+				<input type="radio" name="experienceExp" value="level2">Level 2
+				<input type="radio" name="experienceExp" value="level1">Level 1<br>
+
+			</p>
+			
+			<p><input type="submit" value="calculate Salary" id="submitform" onClick = "out()"></p>
+			</fieldset>
+		</form>
+
+		<div class="reportpage">
+				<h3>SALARY REPORT</h3>
+				<pre id="result">
+				</pre>
+		</div>
+	
+</body>
+</html>
