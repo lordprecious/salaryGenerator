@@ -3,7 +3,7 @@
 <head>
 	<title>Salary Generator</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<script type="text/javascript" src = "./js/calculator.js"></script>
+	
 	<!-- <script type="text/javascript" src="./js/generate.js"></script> -->
 	
 </head>
@@ -18,7 +18,7 @@
 	               <option value = "interns" selected>Interns</option>
 	               <option value = "associates">Associates</option>
 	               <option value = "managers">Managers</option>
-	               <option value = "excutives">Excutives</option>
+	               <option value = "executives">Executives</option>
 	               <option value = "directors">Directors</option>
              	</select>
 			</p>
@@ -30,15 +30,15 @@
 
 			</p>
 			
-			<p><input type="submit" value="calculate Salary" id="submitform" onClick = "out()"></p>
+			<p><input type="submit" value="calculate Salary" id="submitform"></p>
 			</fieldset>
 		</form>
 
 		<div class="reportpage">
 				<h3>SALARY REPORT</h3>
-				<pre id="result">
+				<pre id="change">
 				</pre>
 		</div>
-	
+		<script type="text/javascript" src = "./js/calculator.js"></script>
 </body>
 </html>
