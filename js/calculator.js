@@ -1,6 +1,8 @@
 function employee (level) {
   this.level = level
 }
+
+
 employee.prototype.calcsalary = function () {
   if (this.level === 'level1') {
     return this.baseSalary
@@ -10,6 +12,8 @@ employee.prototype.calcsalary = function () {
     return (this.baseSalary * 1.2)
   }
 }
+
+
 employee.prototype.transport = function () {
   if (this.level === 'level1') {
     return 0
@@ -19,6 +23,8 @@ employee.prototype.transport = function () {
     return (this.baseSalary * 0.1)
   }
 }
+
+
 employee.prototype.Wardrope = function () {
   if (this.level === 'level1') {
     return 0
@@ -28,30 +34,41 @@ employee.prototype.Wardrope = function () {
     return (this.baseSalary * 0.1)
   }
 }
+
 function Interns (level) {
   employee.call(this, level)
   this.baseSalary = 10000
 }
+
+
 Interns.prototype = new employee()
 function Associates (level) {
   employee.call(this, level)
   this.baseSalary = 20000
 }
+
+
 Associates.prototype = new employee()
 function Managers (level) {
   employee.call(this, level)
   this.baseSalary = 30000
 }
+
+
 Managers.prototype = new employee()
 function Executive (level) {
   employee.call(this, level)
   this.baseSalary = 40000
 }
+
+
 Executive.prototype = new employee()
 function Director (level) {
   employee.call(this, level)
   this.baseSalary = 50000
 }
+
+
 Director.prototype = new employee()
 function out () {
   var emptype = document.getElementById('employeeType').value
