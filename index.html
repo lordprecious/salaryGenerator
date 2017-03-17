@@ -10,16 +10,16 @@
 <body>
 	<h1>SALARY GENERATOR<h1>
 	<H5></H5>
-		<form id="SalaryForm" method="post">
+		<form id="SalaryForm">
 			<fieldset>
 			<p>
 				<label>Employee Level</label>
 				<select name="employeeType" id = "employeeType">
-	               <option value = "interns" selected>Interns</option>
-	               <option value = "associates">Associates</option>
-	               <option value = "managers">Managers</option>
-	               <option value = "excutives">Excutives</option>
-	               <option value = "directors">Directors</option>
+	               <option value = "Interns">Interns</option>
+	               <option value = "Associates">Associates</option>
+	               <option value = "Managers">Managers</option>
+	               <option value = "Excutives">Excutives</option>
+	               <option value = "Directors">Directors</option>
              	</select>
 			</p>
 			<p>
@@ -29,14 +29,20 @@
 				<input type="radio" name="experienceExp" value="level1">Level 1<br>
 
 			</p>
-			
-			<p><input type="submit" value="calculate Salary" id="submitform" onClick = "out()"></p>
 			</fieldset>
+				
 		</form>
+	
 
 		<div class="reportpage">
-				<h3>SALARY REPORT</h3>
-				<pre id="result">
+                <button onclick="out()">Calculate salary<button>
+			    
+				<h3 id="result">SALARY REPORT</h3>
+				<h3 id="sal"></h3>
+				<h3 id="trans"></h3>
+				<h3 id="ward"></h3>
+				<h3 id="Total"></h3>
+				<pre>
 				</pre>
 		</div>
 	
